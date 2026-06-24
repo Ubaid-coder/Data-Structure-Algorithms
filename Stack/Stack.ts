@@ -20,7 +20,6 @@ function push(arr: number[], value: number) {
 // console.log(push(data, 60));
 function pop(arr: number[]) {
     let currSize = arr.length;
-    console.log(currSize)
     if (currSize <= 0) {
         console.error("Stack Underflow");
         return -1;
