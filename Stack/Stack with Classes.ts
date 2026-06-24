@@ -2,6 +2,7 @@ class Stack {
     private list: number[] = [];
     private currentSize: number = 0;
     private maxSize: number = 1;
+    
     constructor(size: number) {
         this.maxSize = size;
         this.currentSize = this.list.length;
