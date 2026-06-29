@@ -30,6 +30,23 @@ class Queue {
         this.currSize--;
         return 1;
     }
+
+    front(): number {
+        if (this.list.length <= 0) {
+            console.log('Queue underflow!');
+            return -1;
+        }
+        return this.list[0];
+    }
+
+    rear(): number {
+        if (this.list.length <= 0) {
+            console.log('Queue underflow!');
+            return -1;
+        }
+        return this.list.length-1;
+    }
+
     display(): number {
         console.log(this.list);
         return 1;
